@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    background: url("wp2657464-backgrounds-plain.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+#board {
+    background: url("wp3379965-backgrounds-plain.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 90vmin;
+    height: 92vmin;
+    /* border: 1px solid white; */
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    color: white;
+    box-shadow: 0px 3px 20px #00000085;
+}
+
+.head{
+    background-color: #b8c0c9;
+    border: 1px solid #4e0e3490;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px #0000004d;
+}
+
+.food{
+    background-color:  #4e0e34
+    ;
+    /* border-radius: 2rem; */
+    border-radius: 7px;
+    /* border: 1px solid rgba(255, 255, 255, 0.422); */
+    box-shadow: 0px 3px 5px #0000004d;
+    box-shadow: 0px 3px 10px #0000004d;
+    
+}
+
+.snakeBody{
+    background-color:#b8c0c9;
+    border-radius: 5px;
+    border: 1px solid #4e0e3490;
+    box-shadow: 0px 3px 10px #0000004d;
+}
+
+.ScoreBoard h1{
+ line-height: 60px;
+ color: rgba(255, 255, 255, 0.738);
+ font-family: 'Roboto Mono', monospace;
+ font-size: 2rem;
+
+}
+
+#MusicButton {
+    padding: 20px;
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+    /* background: url("../img/wp3379965-backgrounds-plain.jpg"); 
+    */
+    background-color: #0000002a;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: .9;
+    transition: .3s;
+    margin-top: 10px;
+    text-align: left;
+}
+
+#MusicButton:hover{
+    background-color: #0000006f;
+}
+
+
+
+#Level {
+    padding: 20px;
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+    /* background: url("../img/wp3379965-backgrounds-plain.jpg"); */
+    background-color: #0000002a;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: .9;
+    transition: .3s;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+#Level:hover{
+    background-color: #0000006f;
+}
+
+#scorediv{
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+    background-color: #0000002a;
+    /* background: url("../img/wp3379965-backgrounds-plain.jpg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 20px;
+    transition: .3s;
+}
+
+#scorediv:hover{
+    background-color: #0000006f;
+}
+
+.ScoreBoard{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.levels {
+    display: flex;
+    justify-content: space-around;
+}
+
+#Highscorediv{
+    color: rgba(255, 255, 255, 0.644);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+}
